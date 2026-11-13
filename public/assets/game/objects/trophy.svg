@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" fill="none">
+  <defs>
+    <linearGradient id="goldCup" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8D6"/>
+      <stop offset="35%" stop-color="#F5D061"/>
+      <stop offset="70%" stop-color="#CBB57B"/>
+      <stop offset="100%" stop-color="#9A8449"/>
+    </linearGradient>
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D3E2B"/>
+      <stop offset="100%" stop-color="#141C13"/>
+    </linearGradient>
+    <filter id="starGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="100" cy="228" rx="60" ry="7" fill="#000000" fill-opacity="0.2"/>
+
+  <!-- Plinth / Base Bottom Tier -->
+  <rect x="52" y="200" width="96" height="22" rx="4" fill="url(#baseGrad)" stroke="#CBB57B" stroke-width="2"/>
+  <!-- Base Plaque -->
+  <rect x="66" y="205" width="68" height="12" rx="2" fill="#CBB57B"/>
+  <text x="100" y="214" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="900" fill="#1E281C" text-anchor="middle" letter-spacing="1">ENTHIOSHUB</text>
+
+  <!-- Base Middle Tier -->
+  <path d="M70 190 L130 190 L126 200 L74 200 Z" fill="#1E281C" stroke="#9A8449" stroke-width="1.5"/>
+
+  <!-- Trophy Stem / Pedestal -->
+  <path d="M92 145 L108 145 L106 182 L94 182 Z" fill="url(#goldCup)" stroke="#9A8449" stroke-width="1.5"/>
+  <ellipse cx="100" cy="182" rx="14" ry="4" fill="url(#goldCup)" stroke="#9A8449" stroke-width="1.5"/>
+  <ellipse cx="100" cy="148" rx="12" ry="3.5" fill="url(#goldCup)" stroke="#9A8449" stroke-width="1.5"/>
+
+  <!-- Left Trophy Handle -->
+  <path d="M62 48 C32 48 28 98 68 112 L72 98 C46 90 48 62 68 62 Z" fill="url(#goldCup)" stroke="#9A8449" stroke-width="2"/>
+  <!-- Right Trophy Handle -->
+  <path d="M138 48 C168 48 172 98 132 112 L128 98 C154 90 152 62 132 62 Z" fill="url(#goldCup)" stroke="#9A8449" stroke-width="2"/>
+
+  <!-- Main Cup Body -->
+  <path d="M58 36 C58 84 76 138 100 144 C124 138 142 84 142 36 Z" fill="url(#goldCup)" stroke="#9A8449" stroke-width="2"/>
+
+  <!-- Cup Rim -->
+  <ellipse cx="100" cy="36" rx="42" ry="10" fill="url(#goldCup)" stroke="#FFF8D6" stroke-width="2"/>
+  <ellipse cx="100" cy="36" rx="36" ry="7" fill="#CBB57B"/>
+
+  <!-- Star Emblem on Cup Face -->
+  <circle cx="100" cy="80" r="18" fill="#1E281C" stroke="#FFF2B2" stroke-width="2" filter="url(#starGlow)"/>
+  <path d="M100 68 L104 76 L112 78 L106 84 L108 92 L100 88 L92 92 L94 84 L88 78 L96 76 Z" fill="#F5D061"/>
+
+  <!-- Sparkling Stars floating around -->
+  <path d="M42 28 L44 34 L50 36 L44 38 L42 44 L40 38 L34 36 L40 34 Z" fill="#FFF2B2" filter="url(#starGlow)"/>
+  <path d="M160 30 L162 36 L168 38 L162 40 L160 46 L158 40 L152 38 L158 36 Z" fill="#FFF2B2" filter="url(#starGlow)"/>
+  <circle cx="100" cy="20" r="3" fill="#FFF2B2" filter="url(#starGlow)"/>
+</svg>

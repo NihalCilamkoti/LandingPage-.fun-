@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200" fill="none">
+  <defs>
+    <linearGradient id="stageDeck" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="curtainRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BE123C"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+    <linearGradient id="spotbeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2B2" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFF2B2" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="120" cy="188" rx="100" ry="8" fill="#000000" fill-opacity="0.2"/>
+
+  <!-- Truss Arch Structure -->
+  <path d="M25 40 L25 155 M215 40 L215 155 M25 40 L215 40" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <!-- Truss Diagonal Bracing -->
+  <line x1="25" y1="40" x2="65" y2="40" stroke="#64748B" stroke-width="2"/>
+  <line x1="65" y1="40" x2="105" y2="40" stroke="#64748B" stroke-width="2"/>
+  <line x1="105" y1="40" x2="145" y2="40" stroke="#64748B" stroke-width="2"/>
+  <line x1="145" y1="40" x2="185" y2="40" stroke="#64748B" stroke-width="2"/>
+  <line x1="185" y1="40" x2="215" y2="40" stroke="#64748B" stroke-width="2"/>
+
+  <!-- Spotlights on Truss -->
+  <!-- Left Spotlight -->
+  <rect x="52" y="34" width="14" height="10" rx="2" fill="#334155"/>
+  <polygon points="59,44 20,165 98,165" fill="url(#spotbeam)"/>
+  <!-- Center Left Spotlight -->
+  <rect x="94" y="34" width="14" height="10" rx="2" fill="#334155"/>
+  <polygon points="101,44 70,165 145,165" fill="url(#spotbeam)"/>
+  <!-- Center Right Spotlight -->
+  <rect x="132" y="34" width="14" height="10" rx="2" fill="#334155"/>
+  <polygon points="139,44 100,165 175,165" fill="url(#spotbeam)"/>
+  <!-- Right Spotlight -->
+  <rect x="174" y="34" width="14" height="10" rx="2" fill="#334155"/>
+  <polygon points="181,44 142,165 220,165" fill="url(#spotbeam)"/>
+
+  <!-- Stage Deck Platform -->
+  <!-- Top Face (Perspective) -->
+  <polygon points="20,140 220,140 235,170 5,170" fill="url(#stageDeck)" stroke="#64748B" stroke-width="2"/>
+  <!-- Front Skirt Face -->
+  <polygon points="5,170 235,170 235,185 5,185" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+  <!-- Banner on Skirt -->
+  <rect x="70" y="172" width="100" height="11" rx="2" fill="#CBB57B"/>
+  <text x="120" y="180" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="900" fill="#1E281C" text-anchor="middle" letter-spacing="1">★ ENTHIOSHUB ★</text>
+
+  <!-- Left Speaker Stack -->
+  <rect x="12" y="95" width="22" height="45" rx="3" fill="#1E293B" stroke="#0F172A" stroke-width="2"/>
+  <circle cx="23" cy="108" r="6" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+  <circle cx="23" cy="126" r="7" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Right Speaker Stack -->
+  <rect x="206" y="95" width="22" height="45" rx="3" fill="#1E293B" stroke="#0F172A" stroke-width="2"/>
+  <circle cx="217" cy="108" r="6" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+  <circle cx="217" cy="126" r="7" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Microphone on Center Stage -->
+  <line x1="120" y1="110" x2="120" y2="152" stroke="#94A3B8" stroke-width="2"/>
+  <ellipse cx="120" cy="152" rx="7" ry="2.5" fill="#334155"/>
+  <circle cx="120" cy="107" r="4.5" fill="#475569" stroke="#94A3B8" stroke-width="1"/>
+</svg>

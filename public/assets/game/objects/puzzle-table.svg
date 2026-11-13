@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220" fill="none">
+  <defs>
+    <linearGradient id="tableWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4A373"/>
+      <stop offset="100%" stop-color="#A97142"/>
+    </linearGradient>
+    <linearGradient id="blueprintBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="110" cy="205" rx="75" ry="10" fill="#000000" fill-opacity="0.2"/>
+
+  <!-- Table Legs -->
+  <path d="M52 140 L45 200 L55 200 L62 140 Z" fill="#8C532B"/>
+  <path d="M168 140 L175 200 L165 200 L158 140 Z" fill="#8C532B"/>
+  <path d="M106 145 L106 202 L114 202 L114 145 Z" fill="#713F1D"/>
+
+  <!-- Table Top Base Thickness -->
+  <path d="M25 115 C25 145 195 145 195 115 L195 130 C195 160 25 160 25 130 Z" fill="#8C532B"/>
+
+  <!-- Table Top Oval -->
+  <ellipse cx="110" cy="115" rx="85" ry="32" fill="url(#tableWood)" stroke="#693B18" stroke-width="3"/>
+
+  <!-- Blueprint Sheet Laid on Table -->
+  <g transform="translate(110,112) rotate(-6) translate(-110,-112)">
+    <rect x="65" y="92" width="90" height="42" rx="4" fill="url(#blueprintBg)" stroke="#60A5FA" stroke-width="1.5"/>
+    <!-- Blueprint Lines -->
+    <line x1="72" y1="102" x2="148" y2="102" stroke="#93C5FD" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="72" y1="112" x2="148" y2="112" stroke="#93C5FD" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="72" y1="122" x2="148" y2="122" stroke="#93C5FD" stroke-width="1" stroke-dasharray="2,2"/>
+    <rect x="75" y="98" width="22" height="18" fill="none" stroke="#60A5FA" stroke-width="1.5"/>
+    <rect x="108" y="104" width="30" height="18" fill="none" stroke="#60A5FA" stroke-width="1.5"/>
+  </g>
+
+  <!-- Colorful Puzzle Pieces Scattered on Table -->
+  <!-- Piece 1 (Emerald) -->
+  <path d="M50 110 C50 106 56 106 56 110 L64 110 L64 118 C68 118 68 124 64 124 L64 130 L50 130 Z" fill="#10B981" stroke="#065F46" stroke-width="1.5"/>
+  <!-- Piece 2 (Amber) -->
+  <path d="M148 98 L160 98 C160 94 166 94 166 98 L172 98 L172 112 L160 112 C160 116 154 116 154 112 L148 112 Z" fill="#F59E0B" stroke="#B45309" stroke-width="1.5"/>
+  <!-- Piece 3 (Purple) -->
+  <path d="M152 118 L164 118 L164 126 C168 126 168 132 164 132 L164 138 L152 138 Z" fill="#8B5CF6" stroke="#5B21B6" stroke-width="1.5"/>
+
+  <!-- Magnifying Glass -->
+  <g transform="translate(76,120) rotate(24)">
+    <circle cx="14" cy="14" r="10" fill="#E0F2FE" fill-opacity="0.6" stroke="#CBB57B" stroke-width="2.5"/>
+    <line x1="22" y1="22" x2="34" y2="34" stroke="#8C532B" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="12" cy="12" r="3" fill="#FFFFFF" fill-opacity="0.8"/>
+  </g>
+</svg>
